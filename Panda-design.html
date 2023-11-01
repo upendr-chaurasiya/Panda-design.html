@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .main{
+             position: absolute;
+             left:200px;
+        }
+        .hear1{
+              height: 150px;
+              width: 150px;
+              background:black;
+              border-radius: 50%;
+              position: absolute;
+              top: 200px;
+              left: 350px;
+              z-index: -1;
+        }
+        .hear2{
+              height: 150px;
+              width: 150px;
+              background:black;
+              border-radius: 50%;
+              position: absolute;
+              top: 210px;
+              left: 790px;
+              z-index: -1;
+        }
+        .face{
+              height: 500px;
+              width: 500px;
+              background:white;
+              
+              margin: 150px 0 0 400px;
+              border-radius: 50%;
+              border-top:5px solid black;
+              border-bottom:5px solid red;
+        }
+        .face .eye1{
+              height: 80px;
+              width: 120px;
+              background:black;
+              border-radius: 50%;
+              position: absolute;
+              top: 300px;
+              left: 480px;
+              z-index: 1;
+        }
+        .face .eye1 .white1{
+              height: 70px;
+              width: 110px;
+              background:white;
+              border-radius: 50%;
+              position:relative;
+              top:5px;
+              left:10px;
+              z-index: 1;
+        }
+        .face .eye1 .white1 .black1{
+              height: 50px;
+              width: 50px;
+              background:black;
+              border-radius: 50%;
+              position:relative;
+              top:8px;
+              left:10px;
+              z-index: 1;
+              animation: eye 4s infinite;
+        }
+        @keyframes eye {
+            0%{
+                 left: 0px; 
+            }
+            50%{
+                  left: 60px;
+            }
+            100%{
+                  left: 0px;
+            }
+        }
+        .face .eye2{
+              height: 80px;
+              width: 120px;
+              background:black;
+              border-radius: 50%;
+              position: absolute;
+              top: 300px;
+              left: 700px;
+              z-index: 1;
+        }
+        .face .eye2 .white2{
+              height: 70px;
+              width: 110px;
+              background:white;
+              border-radius: 50%;
+              position:relative;
+              top:5px;
+              left:0px;
+              z-index: 1;
+        }
+        .face .eye2 .white2 .black2{
+              height: 50px;
+              width: 50px;
+              background:black;
+              border-radius: 50%;
+              position:relative;
+              top:8px;
+              left:10px;
+              z-index: 1;
+              animation: eye 4s infinite;
+        }
+        @keyframes eye {
+            0%{
+                 left: 0px; 
+            }
+            50%{
+                  left: 60px;
+            }
+            100%{
+                  left: 0px;
+            }
+        }
+        .mouth1{
+              height: 60px;
+              width: 200px;
+              /* background:orange; */
+              border-radius: 50%;
+              position: absolute;
+              top: 500px;
+              left: 550px;
+              z-index: 1;
+              border-top: 10px solid black;
+        }
+        .nose{
+              height: 40px;
+              width: 100px;
+              background:black;
+              border-radius: 50%;
+              position: absolute;
+              top: 400px;
+              left: 595px;
+              z-index: 1;
+              transform: rotate(90deg);
+        }
+        .body{
+            height: 600px;
+              width: 400px;
+              background:white;
+              margin: 150px 0 0 400px;
+              border-radius: 50%;
+              border:5px solid black;
+              position: absolute;
+              top: 400px;
+              left:50px;
+              z-index: -1;
+        }
+        .lag1{
+            height: 400px;
+            width: 80px;
+            background:black;
+            border-radius: 20px;
+            position: absolute;
+              top: 1020px;
+              left: 500px;
+              z-index: -2;
+        }
+        .lag2{
+            height: 400px;
+            width: 80px;
+            background:black;
+            border-radius: 20px;
+            position: absolute;
+              top: 1020px;
+              left: 720px;
+              z-index: -2;
+        }
+        .hand1{
+            height: 300px;
+            width: 40px;
+            background:black;
+            border-radius: 20px;
+            position: absolute;
+              top: 650px;
+              left: 350px;
+              z-index: -2;
+              transform: rotate(-70deg);
+        }
+        .rectange1{
+            height: 300px;
+            width: 40px;
+            background:black;
+            border-radius: 20px;
+            position: absolute;
+              top: 490px;
+              left: 160px;
+              z-index: -2;
+              transform: rotate(-30deg);
+
+            
+        }
+        .cricle1{
+            height: 50px;
+              width: 150px;
+              background:black;
+              border-radius: 50%;
+              position:absolute;
+              top:490px;
+              left:420px;
+              z-index: 1;
+              animation: eye 4s infinite;
+        }
+        .cri1{
+             height:50px;
+             width: 50px;
+             background:black;
+             border-radius: 50%;
+             position: absolute;
+             top: 350px;
+             left: 80px;
+             animation: rotate 2s infinite;
+        }
+        @keyframes rotate {
+            0%{
+                  top:350px ;
+                  background: pink;
+            }
+            50%{
+                  top:470px;
+                  background: black;
+            }
+            100%{
+                  top:350px;
+                  background: pink;
+            }
+            
+        }
+        .hand2{
+            height: 300px;
+            width: 40px;
+            background:black;
+            border-radius: 20px;
+            position: absolute;
+              top: 650px;
+              left: 950px;
+              z-index:-2;
+              transform: rotate(70deg);
+        }
+        .rectange2{
+            height: 300px;
+            width: 40px;
+            background:black;
+            border-radius: 20px;
+            position: absolute;
+              top: 490px;
+              left: 1140px;
+              z-index: -2;
+              transform: rotate(30deg);            
+        }
+        .cricle2{
+            height: 50px;
+              width: 150px;
+              background:black;
+              position: absolute;
+              top:490px;
+              left:1140px;
+              border-radius: 50%;
+              animation: eye2 2s infinite;
+        }
+        @keyframes eye2 {
+            0%{
+                 left: 1140px; 
+            }
+            50%{
+                  left: 1180px;
+            }
+            100%{
+                  left: 1140px;
+            }
+        }
+        .cri2{
+             height:50px;
+             width: 50px;
+             background-color: black;
+             border-radius: 50%;
+             position: absolute;
+             top: 350px;
+             left: 1190px;
+             animation: rotate1 2s infinite;
+        }
+        @keyframes rotate1 {
+            0%{
+                  top:350px ;
+                  background: pink;
+            }
+            50%{
+                  top:470px;
+                  background: black;
+            }
+            100%{
+                  top:350px;
+                  background: pink;
+            }
+    </style>
+
+</head>
+<body>
+      <div class="main">
+      <div class="hear1"></div>
+      <div class="hear2"></div>
+      <div class="face">
+        <div class="eye1">
+            <div class="white1">
+                  <div class="black1"></div>
+            </div>
+        </div>
+        
+        <div class="eye2">
+            <div class="white2">
+                  <div class="black2"></div>
+            </div>
+        </div>
+        <div class="nose"></div>
+        <div class="mouth1"></div>
+      </div>
+      <div class="body"></div>
+      <div class="lag1"></div>
+      <div class="lag2"></div>
+
+
+      <div class="hand1"></div>
+      <div class="rectange1"></div>
+      <div class="cricle1"></div>
+      <div class="cri1"></div>
+
+      
+      <div class="hand2"></div>
+      <div class="rectange2"></div>
+      <div class="cricle2"></div>
+      <div class="cri2"></div>
+      </div>
+</body>
+</html>
